@@ -1,5 +1,8 @@
 import sys
 import logging
+from src.logger import logging
+
+
 
 def error_message_deatil(error,error_deatil:sys):
     _,_,exc_tb=error_deatil.exc_info()
@@ -20,6 +23,8 @@ class customException(Exception):
 
     def __str__(self):
         return self.error_message
+    
+
 
 
 
